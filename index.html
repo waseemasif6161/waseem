@@ -1,9 +1,178 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Waseem</title>
-  </head>
-  <body>
-    <h1>Waseem website</h1>
-  </body>
-</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waseem Asif - Amateur Web Enthusiast</title>
+    <style>
+        /* CSS Reset and Basic Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8; /* Light blue/gray background */
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            border-top: 5px solid #007bff; /* Primary blue accent */
+        }
+
+        /* Rich Typography */
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            /* Animation applied here */
+            animation: color-shift 10s infinite alternate; 
+        }
+
+        @keyframes color-shift {
+            0% { color: #007bff; } /* Primary Blue */
+            50% { color: #28a745; } /* Green */
+            100% { color: #ffc107; } /* Yellow/Gold */
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #6c757d; /* Muted gray */
+            margin-bottom: 30px;
+            font-weight: 300;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 15px;
+        }
+
+        /* Profile Details Section */
+        .profile-details {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px dashed #ced4da;
+            font-size: 1.1em;
+        }
+
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+
+        .label {
+            font-weight: 600;
+            color: #495057;
+            flex-basis: 35%;
+        }
+
+        .value {
+            flex-basis: 60%;
+            color: #333;
+            text-align: right;
+        }
+
+        /* Amateur Section with Animation */
+        .amateur-note {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            font-style: italic;
+            color: #6c757d;
+        }
+        
+        /* Links and Footer */
+        .links a {
+            display: inline-block;
+            margin: 20px 15px 0;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 500;
+            transition: transform 0.3s ease, color 0.3s ease; /* Animation for links */
+        }
+
+        .links a:hover {
+            color: #0056b3;
+            transform: scale(1.1); /* Zoom effect on hover */
+            text-decoration: underline;
+        }
+        
+        footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #e9ecef;
+            font-size: 0.85em;
+            color: #adb5bd;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Waseem Asif</h1>
+            <h2>Amateur Web Enthusiast & Worker</h2>
+        </header>
+
+        <hr>
+
+        <section class="profile-details">
+            <div class="detail-item">
+                <span class="label">Date of Birth:</span>
+                <span class="value">December 26, 1978</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Place of Birth:</span>
+                <span class="value">Lahore, Pakistan 🇵🇰</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Current Residence:</span>
+                <span class="value">Saudi Arabia 🇸🇦</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Employer:</span>
+                <span class="value">ISAM ECONOMIC COMPANY LTD.</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Role:</span>
+                <span class="value">Worker (Professional)</span>
+            </div>
+        </section>
+
+        <section class="amateur-note">
+            <p>"Building this page was a fun experiment! I'm learning HTML and CSS, and I enjoy adding simple animations and rich styles to my projects."</p>
+        </section>
+
+        <div class="links">
+            <a href="#" target="_blank">Contact (Placeholder)</a>
+            <a href="#" target="_blank">ISAM Economic Co. Website</a>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Waseem Asif - Personal Profile</p>
+        </footer>
+
+    </div>
+
+</body>
+  </html>
+  
